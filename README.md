@@ -132,3 +132,22 @@ Benchmark scores should be interpreted in the context of the implemented matchin
 ## Project Goal
 
 Demonstrate practical engineering concepts for building and evaluating an agentic code-review workflow, including specialist roles, evidence validation, structured reporting, traceability, and benchmark testing.
+
+
+
+## Benchmark Results
+
+The harness was evaluated on three synthetic code-review tasks covering an empty-list edge case, unsafe use of `eval()`, and file-handle reliability.
+
+| Metric | Multi-agent | Single-agent baseline |
+|---|---:|---:|
+| Tasks completed | 3/3 | 3/3 |
+| Mock-mode precision | 1.00 | 1.00 |
+| Mock-mode recall | 1.00 | 1.00 |
+| Mock-mode F1 | 1.00 | 1.00 |
+| Total measured runtime | 0.008 s | 0.003 s |
+| Estimated input tokens | 582 | 54 |
+
+**Interpretation:** These results validate the mock workflow and scoring mechanics only. They do not demonstrate that multi-agent AI produces better reviews. The mock multi-agent workflow took longer and used more estimated input tokens. A meaningful quality comparison requires equivalent live-model runs and a more robust semantic evaluation.
+
+Token counts are estimates; measured runtime is specific to this local mock execution. Cost was not reported.
