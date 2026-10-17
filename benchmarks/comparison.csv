@@ -1,7 +1,7 @@
 task_id,approach,mode,run_status,accepted_findings,rejected_findings,true_positives,false_positives,false_negatives,precision,recall,f1,elapsed_seconds,input_tokens_estimated,output_tokens,cost_usd,note,report_json
-task_1,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.004,188,0,,Multi-agent specialist workflow,runs/94ea799f-2c2f-4ae1-8451-aae3a83120ae/94ea799f-2c2f-4ae1-8451-aae3a83120ae.json
-task_1,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/557cdba5-53ba-4cb0-860b-e966514954e2/557cdba5-53ba-4cb0-860b-e966514954e2.json
-task_2,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.002,197,0,,Multi-agent specialist workflow,runs/1bc3f6e5-5251-48b2-bd68-1afdae24560c/1bc3f6e5-5251-48b2-bd68-1afdae24560c.json
-task_2,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/a66238b6-8fac-4a28-9d0b-f4eb48761c32/a66238b6-8fac-4a28-9d0b-f4eb48761c32.json
-task_3,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.002,197,0,,Multi-agent specialist workflow,runs/afaab78c-4f76-4bbe-a28e-51ce1e5360a6/afaab78c-4f76-4bbe-a28e-51ce1e5360a6.json
-task_3,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/e092af16-f6a7-48a8-9bd0-2b0f8d5ace4a/e092af16-f6a7-48a8-9bd0-2b0f8d5ace4a.json
+task_1,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.004,188,0,,Multi-agent specialist workflow,runs/1f328483-da32-4582-805b-b81fa29d8684/1f328483-da32-4582-805b-b81fa29d8684.json
+task_1,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/8ded8f07-2028-4a30-97c0-648da8d7e8ee/8ded8f07-2028-4a30-97c0-648da8d7e8ee.json
+task_2,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.002,197,0,,Multi-agent specialist workflow,runs/f4b8efc0-790c-4c9a-97e9-e0e86385dc02/f4b8efc0-790c-4c9a-97e9-e0e86385dc02.json
+task_2,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/219f70a4-5d93-4e13-b088-33d854f9a548/219f70a4-5d93-4e13-b088-33d854f9a548.json
+task_3,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.002,197,0,,Multi-agent specialist workflow,runs/ca84ee50-13cc-40ba-a901-cd6e95dd3bea/ca84ee50-13cc-40ba-a901-cd6e95dd3bea.json
+task_3,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/ca1316ba-b7c6-4c2b-960e-de5a3f5d5e57/ca1316ba-b7c6-4c2b-960e-de5a3f5d5e57.json
