@@ -1,0 +1,40 @@
+{
+  "description": "Initial ground-truth labels for the three supplied sample projects. Labels are based on the current sample code and should be reviewed if the code changes.",
+  "matching": {
+    "file_match": "basename",
+    "line_tolerance": 2,
+    "category_match_required": true
+  },
+  "tasks": {
+    "task_1": [
+      {
+        "id": "T1-001",
+        "file_path": "app.py",
+        "line": 3,
+        "category": "correctness",
+        "title": "Empty input can raise IndexError",
+        "rationale": "first_item returns items[0] without checking whether items is empty."
+      }
+    ],
+    "task_2": [
+      {
+        "id": "T2-001",
+        "file_path": "app.py",
+        "line": 3,
+        "category": "security",
+        "title": "Dynamic evaluation of input",
+        "rationale": "calculate passes user_expression to eval, which can execute arbitrary Python expressions."
+      }
+    ],
+    "task_3": [
+      {
+        "id": "T3-001",
+        "file_path": "app.py",
+        "line": 2,
+        "category": "reliability",
+        "title": "File handle may remain open on exception",
+        "rationale": "If parse_config raises, handle.close is skipped. The practical impact depends on runtime cleanup and call frequency."
+      }
+    ]
+  }
+}

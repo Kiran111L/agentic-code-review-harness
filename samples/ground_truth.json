@@ -1,0 +1,5 @@
+{
+  "task_1": [{"id":"T1-1","category":"correctness","file":"app.py","description":"Empty list causes IndexError in first_item"}],
+  "task_2": [{"id":"T2-1","category":"security","file":"app.py","description":"User-controlled expression passed to eval"}],
+  "task_3": [{"id":"T3-1","category":"reliability","file":"app.py","description":"File handle is not closed when parsing raises"}]
+}

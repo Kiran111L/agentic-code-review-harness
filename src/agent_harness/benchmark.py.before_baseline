@@ -1,0 +1,29 @@
+import asyncio, csv, json
+from pathlib import Path
+from .harness import run_review
+from .schemas import RunLimits
+
+async def run_benchmark_impl(mode, approve_paid_calls, output_dir):
+    base = Path("samples")
+    out = Path("benchmarks")
+    out.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for task_id in ("task_1", "task_2", "task_3"):
+        project = base / task_id
+        task = f"Review {task_id} for correctness, security, reliability and maintainability."
+        for approach in ("multi_agent", "single_agent_baseline"):
+            if approach == "single_agent_baseline":
+                # A separate bounded baseline prompt is implemented as a distinct workflow below.
+                report, paths = await run_review(task, str(project), mode, approve_paid_calls, output_dir)
+                note = "Baseline workflow approximated by shared harness in this starter; semantic baseline comparison not yet implemented."
+            else:
+                report, paths = await run_review(task, str(project), mode, approve_paid_calls, output_dir)
+                note = "Multi-agent harness run"
+            rows.append({"task_id":task_id,"approach":approach,"mode":mode,"run_status":report.status.value,"accepted_findings":len(report.accepted_findings),"rejected_findings":len(report.rejected_findings),"elapsed_seconds":report.metrics.get("elapsed_seconds"),"input_tokens_estimated":report.metrics.get("input_tokens_estimated"),"output_tokens":report.metrics.get("output_tokens"),"cost_usd":report.metrics.get("cost_usd"),"quality_scores":"pending human/semantic assessment","note":note,"report_json":paths["json"]})
+    csv_path = out / "comparison.csv"
+    with csv_path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer.writeheader(); writer.writerows(rows)
+    md_path = out / "comparison.md"
+    md_path.write_text("# Benchmark comparison\n\nScores are pending human/semantic assessment. Mock-mode runs test mechanics only and are not model-quality evidence.\n\n" + "\n".join(f"- {r['task_id']} / {r['approach']}: status={r['run_status']}, accepted={r['accepted_findings']}, quality scores=pending." for r in rows) + "\n", encoding="utf-8")
+    return rows, str(csv_path), str(md_path)

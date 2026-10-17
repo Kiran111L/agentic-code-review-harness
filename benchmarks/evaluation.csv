@@ -1,0 +1,7 @@
+task_id,approach,run_status,expected_findings,accepted_findings,true_positives,false_positives,false_negatives,precision,recall,f1_score,report_json
+task_1,multi_agent,completed,1,2,1,1,0,0.5,1.0,0.6667,/Users/kiranlaveti/Downloads/agentic-code-review-harness/runs/ab9c065f-de6f-4414-bc83-f5e10b9a4ab6/ab9c065f-de6f-4414-bc83-f5e10b9a4ab6.json
+task_1,single_agent_baseline,completed,1,0,0,0,1,0.0,0.0,0.0,/Users/kiranlaveti/Downloads/agentic-code-review-harness/runs/df094d9d-cf54-4c3a-a1b2-813cac096862/df094d9d-cf54-4c3a-a1b2-813cac096862.json
+task_2,multi_agent,completed,1,2,1,1,0,0.5,1.0,0.6667,/Users/kiranlaveti/Downloads/agentic-code-review-harness/runs/4f2892a0-0dc8-43e8-bfc6-c6f58620453b/4f2892a0-0dc8-43e8-bfc6-c6f58620453b.json
+task_2,single_agent_baseline,completed,1,0,0,0,1,0.0,0.0,0.0,/Users/kiranlaveti/Downloads/agentic-code-review-harness/runs/cb834cd4-01de-4a69-8034-7a4c11dfb35b/cb834cd4-01de-4a69-8034-7a4c11dfb35b.json
+task_3,multi_agent,partial,1,0,0,0,1,0.0,0.0,0.0,/Users/kiranlaveti/Downloads/agentic-code-review-harness/runs/06f0c04d-faab-46d6-9b44-648e07470fdf/06f0c04d-faab-46d6-9b44-648e07470fdf.json
+task_3,single_agent_baseline,completed,1,0,0,0,1,0.0,0.0,0.0,/Users/kiranlaveti/Downloads/agentic-code-review-harness/runs/020d753e-0bea-430d-913d-252af85bfde0/020d753e-0bea-430d-913d-252af85bfde0.json

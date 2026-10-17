@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.DS_Store
+runs/
+backups_before_ollama/
+*.bak
+*.h5
+*.pkl
