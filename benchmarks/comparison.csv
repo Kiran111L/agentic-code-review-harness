@@ -1,7 +1,7 @@
 task_id,approach,mode,run_status,accepted_findings,rejected_findings,true_positives,false_positives,false_negatives,precision,recall,f1,elapsed_seconds,input_tokens_estimated,output_tokens,cost_usd,note,report_json
-task_1,multi_agent,ollama,completed,1,3,0,1,1,0.0,0.0,0.0,152.125,471,0,,Multi-agent specialist workflow,runs/benchmark_ollama/aeae887e-4ede-4291-8535-12fc531b919f/aeae887e-4ede-4291-8535-12fc531b919f.json
-task_1,single_agent_baseline,ollama,completed,0,2,0,0,1,0.0,0.0,0.0,24.319,18,0,,Independent single-agent baseline workflow,runs/benchmark_ollama/cd854f9e-a56f-400c-bbcb-698a32feeca3/cd854f9e-a56f-400c-bbcb-698a32feeca3.json
-task_2,multi_agent,ollama,completed,1,3,0,1,1,0.0,0.0,0.0,220.067,588,0,,Multi-agent specialist workflow,runs/benchmark_ollama/0d58e00a-024d-4632-8823-0ac53103a6d4/0d58e00a-024d-4632-8823-0ac53103a6d4.json
-task_2,single_agent_baseline,ollama,completed,0,2,0,0,1,0.0,0.0,0.0,27.28,18,0,,Independent single-agent baseline workflow,runs/benchmark_ollama/1b6211c8-923b-4a37-ae7a-967a2d879708/1b6211c8-923b-4a37-ae7a-967a2d879708.json
-task_3,multi_agent,ollama,partial,0,2,0,0,1,0.0,0.0,0.0,254.038,199,0,,Multi-agent specialist workflow,runs/benchmark_ollama/c8453691-0930-4ab2-9f0e-f8407e1462f0/c8453691-0930-4ab2-9f0e-f8407e1462f0.json
-task_3,single_agent_baseline,ollama,completed,0,4,0,0,1,0.0,0.0,0.0,54.584,18,0,,Independent single-agent baseline workflow,runs/benchmark_ollama/bdf242c9-47fd-4659-8bee-700235c7f930/bdf242c9-47fd-4659-8bee-700235c7f930.json
+task_1,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.004,188,0,,Multi-agent specialist workflow,runs/94ea799f-2c2f-4ae1-8451-aae3a83120ae/94ea799f-2c2f-4ae1-8451-aae3a83120ae.json
+task_1,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/557cdba5-53ba-4cb0-860b-e966514954e2/557cdba5-53ba-4cb0-860b-e966514954e2.json
+task_2,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.002,197,0,,Multi-agent specialist workflow,runs/1bc3f6e5-5251-48b2-bd68-1afdae24560c/1bc3f6e5-5251-48b2-bd68-1afdae24560c.json
+task_2,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/a66238b6-8fac-4a28-9d0b-f4eb48761c32/a66238b6-8fac-4a28-9d0b-f4eb48761c32.json
+task_3,multi_agent,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.002,197,0,,Multi-agent specialist workflow,runs/afaab78c-4f76-4bbe-a28e-51ce1e5360a6/afaab78c-4f76-4bbe-a28e-51ce1e5360a6.json
+task_3,single_agent_baseline,mock,completed,1,0,1,0,0,1.0,1.0,1.0,0.001,18,0,,Independent single-agent baseline workflow,runs/e092af16-f6a7-48a8-9bd0-2b0f8d5ace4a/e092af16-f6a7-48a8-9bd0-2b0f8d5ace4a.json

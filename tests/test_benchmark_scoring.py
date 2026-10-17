@@ -61,3 +61,45 @@ def test_unmatched_finding_is_false_positive():
     assert result["true_positives"] == 0
     assert result["false_positives"] == 1
     assert result["false_negatives"] == 1
+
+
+def test_matches_same_issue_when_category_differs():
+    expected = [{
+        "category": "correctness",
+        "file": "app.py",
+        "description": "Empty list causes IndexError in first_item",
+    }]
+    accepted = [{
+        "category": "maintainability",
+        "file_path": "src/app.py",
+        "title": "Potential edge case not handled",
+        "explanation": "Empty input could lead to IndexError.",
+        "evidence": "return items[0]",
+    }]
+
+    result = score_findings(expected, accepted)
+
+    assert result["true_positives"] == 1
+    assert result["false_positives"] == 0
+    assert result["false_negatives"] == 0
+
+
+def test_same_file_and_category_do_not_match_unrelated_issue():
+    expected = [{
+        "category": "correctness",
+        "file": "app.py",
+        "description": "Empty list causes IndexError in first_item",
+    }]
+    accepted = [{
+        "category": "correctness",
+        "file_path": "app.py",
+        "title": "Function has no documentation",
+        "explanation": "The public API needs a docstring.",
+        "evidence": "def first_item(items):",
+    }]
+
+    result = score_findings(expected, accepted)
+
+    assert result["true_positives"] == 0
+    assert result["false_positives"] == 1
+    assert result["false_negatives"] == 1

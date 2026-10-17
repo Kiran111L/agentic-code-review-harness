@@ -4,12 +4,12 @@ Results are scored against samples/ground_truth.json. Only accepted findings cou
 
 | Task | Approach | Status | Accepted | TP | FP | FN | Precision | Recall | F1 |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| task_1 | multi_agent | completed | 1 | 0 | 1 | 1 | 0.0000 | 0.0000 | 0.0000 |
-| task_1 | single_agent_baseline | completed | 0 | 0 | 0 | 1 | 0.0000 | 0.0000 | 0.0000 |
-| task_2 | multi_agent | completed | 1 | 0 | 1 | 1 | 0.0000 | 0.0000 | 0.0000 |
-| task_2 | single_agent_baseline | completed | 0 | 0 | 0 | 1 | 0.0000 | 0.0000 | 0.0000 |
-| task_3 | multi_agent | partial | 0 | 0 | 0 | 1 | 0.0000 | 0.0000 | 0.0000 |
-| task_3 | single_agent_baseline | completed | 0 | 0 | 0 | 1 | 0.0000 | 0.0000 | 0.0000 |
+| task_1 | multi_agent | completed | 1 | 1 | 0 | 0 | 1.0000 | 1.0000 | 1.0000 |
+| task_1 | single_agent_baseline | completed | 1 | 1 | 0 | 0 | 1.0000 | 1.0000 | 1.0000 |
+| task_2 | multi_agent | completed | 1 | 1 | 0 | 0 | 1.0000 | 1.0000 | 1.0000 |
+| task_2 | single_agent_baseline | completed | 1 | 1 | 0 | 0 | 1.0000 | 1.0000 | 1.0000 |
+| task_3 | multi_agent | completed | 1 | 1 | 0 | 0 | 1.0000 | 1.0000 | 1.0000 |
+| task_3 | single_agent_baseline | completed | 1 | 1 | 0 | 0 | 1.0000 | 1.0000 | 1.0000 |
 
 ## Interpretation
 
